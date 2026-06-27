@@ -34,10 +34,10 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex border-1 h-100 w-100  rounded-lg mt-40 p-10 border-red-400 m-auto  ">
+    <div className="flex border-1 h-110 w-100  rounded-lg mt-40 p-10 border-red-400 m-auto  ">
       <form
         onSubmit={handleSignin}
-        className="flex flex-col items-center justify-center gap-10"
+        className="flex flex-col items-center justify-center gap-4"
       >
         <div>
           <h2 className="text-4xl font-bold">
@@ -45,25 +45,33 @@ const Signup = () => {
           <hr className="mt-1 bg-red-900 h-[0.1rem]"/>
         </h2>
         </div>
-        <input className="bg-gray-400 p-3 rounded-full w-75"
+       <div>
+         <input className="text-2xl outline-none p-4 rounded-full w-75 gap-1"
           type="text"
           placeholder="Enter your Name..."
           onChange={(e) => setName(e.target.value)}
         />
+        <hr className="ml-4"/>
+        <br />
+        
 
-        <input className="bg-gray-400 p-3 rounded-full w-75"
+        <input className="text-2xl outline-none p-3 rounded-full w-75"
           type="email"
           placeholder="Enter email..."
           onChange={(e) => setEmail(e.target.value)}
         />
+        <hr className="ml-4"/>
+        <br />
 
-        <input className="bg-gray-400 p-3 rounded-full w-75"
+        <input className="text-2xl outline-none p-3 rounded-full w-75"
           type="password"
           placeholder="Enter password..."
           onChange={(e) => setPassword(e.target.value)}
         />
+        <hr className="ml-4"/>
+       </div>
 
-        <button type="submit" className="text-2xl font-semibold bg-blue-800 p-1 mb-2 rounded-full w-40  ">SignUp</button>
+        <button type="submit" className="text-2xl font-semibold bg-blue-800 p-1 mb-2 rounded-full w-40 text-white  ">SignUp</button>
       </form>
     </div>
   );
