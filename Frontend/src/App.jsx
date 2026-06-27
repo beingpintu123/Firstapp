@@ -13,10 +13,10 @@ function App() {
       {/* <Home /> */}
       {/* <Navbar /> */}
       <BrowserRouter>
-        {/* <Home /> */}
+        <Home />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/About" element={<About />} />C{" "}
